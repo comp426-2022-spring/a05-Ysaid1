@@ -84,7 +84,7 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5555/app/flip/
 ```
 
 #### Response body
@@ -144,7 +144,7 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5555/app/flip/call/tails
 ```
 
 #### Response body
