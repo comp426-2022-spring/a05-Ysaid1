@@ -110,7 +110,6 @@ curl http://localhost:5555/app/flip/
 #### Response body
 
 ```
-
 ```
 
 #### Response headers
