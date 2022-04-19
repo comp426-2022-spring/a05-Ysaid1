@@ -84,26 +84,19 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-curl http://localhost:5555/app/flip/
+
 ```
 
 #### Response body
 
 ```
-{"flip":"heads"}
+
 ```
 
 #### Response headers
 
 ```
-HTTP/1.1 200 OK
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 16
-ETag: W/"10-VYm8Bk1/RW8RGhDXdTwBYk6lbGE"
-Date: Fri, 15 Apr 2022 21:29:53 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
+
 ```
 
 ### /app/flips/:number/ (GET)
