@@ -35,7 +35,7 @@
     <div id="home">
       <p>This website has three different functions/components:</p>
       <ol>
-        <li>Single Flip
+        <li>One Flip
           <p> Simulates just a single coin toss</p>
         </li>
         <li>Multiple Flips
@@ -47,13 +47,38 @@
       </ol>
     </div>    
     <div id="single" class="hidden">
-      
+      <h1>Single Coin Flip!</h1>
+    <!-- added a button for a coin flip -->
+    <button id="coin">singleFlip</button>
+    <!-- paragraph to print the result-->
+    <p>Result: <span id="flipResult"></span></p>
+    <!-- US quarte imager -->
+    <img src="./assets/img/coin.png" id="quarter" /> 
     </div>
+
     <div id="multi" class="hidden">
-      
+      <h1>Flip as many coins as you would like!</h1>
+      <for id = "manyCoins">
+        <label for = "number">
+          <strong>How many coins would you like to fip?</strong>
+        </label>
+        <input type = "number" name = "number" id = "number" placeholder="Enter a number">  
+        <input type = "submit" value = "Flip" >  
+      </form>
+    
+      <h2> Results: </h2>
+      <p id = "heads"> </p>
+      <p id = "tails"> </p>
     </div>
+
     <div id="guess" class="hidden">
-      
+      <h1>Guess the result of a single coin flip! </h1>
+
+      <h2>What is your guess?</h2>
+      <button id = "guessedHeads"> Heads </button>
+      <button id = "guessedTails"> Tails </button>
+      <p> </p>
+
     </div>
 	<script src="main.js"></script>
   </body>
