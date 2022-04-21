@@ -1,5 +1,4 @@
-// Focus div based on nav button click
-
+// Nav button click function
 const home = document.getElementById("homenav");
 home.addEventListener("click", activeHome);
 function activeHome() {
