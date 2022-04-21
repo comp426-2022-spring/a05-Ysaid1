@@ -36,11 +36,9 @@ function activeGuess() {
     document.getElementById("guess").className = "active";
 }
 
-// Flip one coin and show coin image to match result when button clicked
-
-// Button coin flip element.
+// Button to coin flip
 const coin = document.getElementById("coin");
-// Add event listener for coin button.
+// Event listener for the single flip button.
 coin.addEventListener("click", singleFlip);
 
 function singleFlip() {
