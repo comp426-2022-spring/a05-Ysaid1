@@ -50,11 +50,7 @@ function singleFlip() {
         })
         .then(function (result) {
             console.log(result);
-            // It is result.flip b/c "json()" returns key/value pair, and the key/value pair in
-            // that endpoint is "flip": "heads", so the value in flip will be displayed (head/tails)
             document.getElementById("singleFlipResult").innerHTML = result.flip;
             document.getElementById("quarter").setAttribute("src", "./assets/img/" + result.flip + ".png");
-            //coin.disabled = true;
-
         })
 }
