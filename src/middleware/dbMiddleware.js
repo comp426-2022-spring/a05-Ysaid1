@@ -15,7 +15,7 @@ const database = require('../services/database.js');
       referer: req.headers['referer'],
       useragent: req.headers['user-agent']
     };
-    const stmt = db.prepare(`INSERT INTO accesslog (remoteaddr, remoteuser, time, method, url, protocol, httpversion, secure, status, referer, useragent) VALUES (?,?,?,?,?,?,?,?,?,?,?)`)
+    const stmt = database.prepare(`INSERT INTO accesslog (remoteaddr, remoteuser, time, method, url, protocol, httpversion, secure, status, referer, useragent) VALUES (?,?,?,?,?,?,?,?,?,?,?)`)
     const info = stmt.run(String(logdata.remoteaddr), String(logdata.remoteuser), String(logdata.time),String(logdata.method), String(logdata.url), String(logdata.protocol), String(logdata.httpversion), String(logdata.secure), String(logdata.status), String(logdata.referer), String(logdata.useragent))
     next()
   };

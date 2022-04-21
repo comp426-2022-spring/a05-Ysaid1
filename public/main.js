@@ -44,7 +44,7 @@ const coin = document.getElementById("coin");
 coin.addEventListener("click", singleFlip);
 
 function singleFlip() {
-    fetch('http://localhost:5000/app/flip')
+    fetch('http://localhost:5555/app/flip')
         .then(function (response) {
             return response.json();
         })
