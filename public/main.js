@@ -84,7 +84,6 @@ async function sendFlips({ url, formData }) {
     console.log(formDataJson);
 
     const options = {
-
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -92,12 +91,10 @@ async function sendFlips({ url, formData }) {
         },
         body: formDataJson
     };
-
     const response = await fetch(url, options);
     if (!response.ok) {
         const error = await response.text();
         throw new Error(error);
     }
-
     return response.json();
 }
