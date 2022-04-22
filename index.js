@@ -43,7 +43,7 @@ if (args.help ||args.HELP || args.h) {
 args['port', 'debug', 'log', 'help'];
 
 // Initializing port to 5000 or user input
-const port = args.port || process.env.PORT || 5555;
+const port = args.port || process.env.PORT || 5000;
 const debug = args.debug;
 const log = args.log;
 

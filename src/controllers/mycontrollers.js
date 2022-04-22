@@ -17,32 +17,25 @@
     }
     return arrayOfFlips;
   }
-  function countFlips(array) {
-    //create a new object to hold number of heads and tails
-    //set heads and tails to 0
-    var countOfHeadsAndTails = {heads: 0, tails: 0}
-    //loop through
-    for (let i = 0; i < array.length; i++){
-      //increment number of heads if it is heads
-      if (array[i] == 'heads'){
-        //increment number of heads
-        countOfHeadsAndTails.heads = countOfHeadsAndTails.heads + 1;
-      }
-      else {
-        //increment number of tails in the object
-        countOfHeadsAndTails.tails = countOfHeadsAndTails.tails + 1;
-      }
+
+function countFlips(array) {
+    let tailsCount = 0;
+    let headsCount = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == 'heads') {
+            headsCount++;
+        } else {
+            tailsCount++;
+        }
     }
-    //remove  tails if it doesn't exist
-    if (countOfHeadsAndTails.heads == 1){
-      delete countOfHeadsAndTails.tails;
-    }
-    else if (countOfHeadsAndTails.tails == 1){
-      delete countOfHeadsAndTails.heads;
-    }
-    //return the object
-    return countOfHeadsAndTails;
-  }
+
+    return {
+        'tails': tailsCount,
+        'heads': headsCount
+    };
+
+}
   
   function flipACoin(call) {
     //Flip a coin to get heads or tails
