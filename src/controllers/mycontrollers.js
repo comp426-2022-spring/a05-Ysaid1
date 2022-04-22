@@ -29,12 +29,10 @@ function countFlips(array) {
             tailsCount++;
         }
     }
-
     return {
-        'tails': tailsCount,
-        'heads': headsCount
+        'Tails': tailsCount,
+        'Heads': headsCount
     };
-
 }
   
   function flipACoin(call) {

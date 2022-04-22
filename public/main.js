@@ -69,8 +69,8 @@ async function flipCoins(event) {
         const formData = new FormData(formEvent);
         const flips = await sendFlips({ url, formData });
         console.log(flips);
-        document.getElementById("heads").innerHTML = "Heads: " + flips.summary.heads;
-        document.getElementById("tails").innerHTML = "Tails: " + flips.summary.tails;
+        document.getElementById("heads").innerHTML = "Heads: " + flips.summary.Heads;
+        document.getElementById("tails").innerHTML = "Tails: " + flips.summary.Tails;
     } catch (error) {
         console.log(error);
     }
