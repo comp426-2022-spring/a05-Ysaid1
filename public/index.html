@@ -55,42 +55,68 @@
     <h3>Please pick a game to play.</h3>
   </div>
 
-  <!-- Single coin toss-->
-  <div id="single" class="hidden">
+   <!-- Single Coin Flip -->
+   <div id="single" class="hidden">
 
     <h1>Flip One Coin!</h1>
-    <!-- button for flippi g -->
-    <button id="coin">single Flip</button>
-    <!-- results-->
+
+    <!-- A "coin" button -->
+    <button id="coin">Flip?</button>
+
+    <!-- A result paragraph -->
     <p>Result: <span id="singleFlipResult"></span></p>
-    <!-- US quarter image -->
-    <img src="./assets/img/coin.png" id="quarter" />
+
+    <!-- An image of a US quarter -->
+    <img src="./assets/img/coin.png" id="smallcoin" />
+
   </div>
-  <!-- Several Coin Flips -->
   <div id="multi" class="hidden">
     <h1>Flip many coins</h1>
-    <form id="multipleCoins">
+    <form id="coins">
       <label for="number">
-        <strong>How many coins?</strong>
+        <strong>How many flips?</strong>
       </label>
-      <input type="number" name="number" id="number" placeholder="Enter a whole number (no fractions)" />
+      <input type="number" name="number" id="number" placeholder="ENTER NUMBER" />
       <input type="submit" value="Flip" />
     </form>
-    <h2>Result:</h2>
+    <h2>Results:</h2>
     <p id="heads"></p>
     <p id="tails"></p>
+    <br>
+    <h2>Graphical Representation</h2>
+    <div id="all_results"></div>
+    <div id="all_results_text"></div>
   </div>
-  <!-- Guessing game -->
   <div id="guess" class="hidden">
     <h1>Guess the Result of Coin Flip!</h1>
-    <h3>What is your guess? : </h3>
-    <button id="guessHeads">Heads</button>
-    <button id="guessTails">Tails</button>
-    <h3>Results:</h3>
-    <p id='call'></p>
-    <p id="flip"></p>
-    <p id="result"></p>
-    <p></p>
+
+    <h2>Pick Your Guess : </h2>
+    <button id="headsButton">HEADS</button>
+    <br>
+    <br>
+    <button id="tailsButton">TAILS</button>
+    <br>
+    <br>
+
+    <div class="flex-container">
+      <div class="guess">
+        <h2>Your Guess : </h2>
+        <p id="userGuess"></p>
+        <img src="./assets/img/question.png" id="userGuessImg" />
+      </div>
+      <br>
+
+      <div class="actual">
+        <h2>Actual : </h2>
+        <p id="actualGuess"></p>
+        <img id="actualGuessImg" />
+      </div>
+    </div>
+    <br>
+    <br>
+    <h1>Result : </h1>
+    <img id="guessResultImg" />
+
   </div>
 
   <script src="main.js"></script>
