@@ -246,39 +246,26 @@ Keep-Alive: timeout=5
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/log/access
 ```
 
 #### Response body
 
 ```
-
+{"id":1,"remoteaddr":"::1","remoteuser":"undefined","time":"1650555457137","method":"GET","url":"/requestProvider.js.map","protocol":"http","httpversion":1.1,"secure":"false","status":200,"referer":"undefined","useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"}
 ```
 
 #### Response headers
 
 ```
-
-```
-
-### /app/log/access/ (GET)
-
-#### Request cURL
-
-```
-
-```
-
-#### Response body
-
-```
-
-```
-
-#### Response headers
-
-```
-
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 256860
+ETag: W/"3eb5c-M2XAC3DgA0yyeWHXTtUW/cUh42M"
+Date: Mon, 25 Apr 2022 21:47:46 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
 ```
 
 ### /app/log/error/ (GET)
@@ -288,19 +275,36 @@ _Not yet implemented_
 #### Request cURL
 
 ```
-
+curl http://localhost:5000/app/error/
 ```
 
 #### Response body
 
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Error: There is an error.<br> &nbsp; &nbsp;at /Users/yehiasaid/Desktop/comp426/a05-Ysaid1/src/routes/debugRoutes.js:20:11<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/Users/yehiasaid/Desktop/comp426/a05-Ysaid1/node_modules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at next (/Users/yehiasaid/Desktop/comp426/a05-Ysaid1/node_modules/express/lib/router/route.js:144:13)<br> &nbsp; &nbsp;at Route.dispatch (/Users/yehiasaid/Desktop/comp426/a05-Ysaid1/node_modules/express/lib/router/route.js:114:3)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/Users/yehiasaid/Desktop/comp426/a05-Ysaid1/node_modules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at /Users/yehiasaid/Desktop/comp426/a05-Ysaid1/node_modules/express/lib/router/index.js:286:22<br> &nbsp; &nbsp;at Function.process_params (/Users/yehiasaid/Desktop/comp426/a05-Ysaid1/node_modules/express/lib/router/index.js:348:12)<br> &nbsp; &nbsp;at next (/Users/yehiasaid/Desktop/comp426/a05-Ysaid1/node_modules/express/lib/router/index.js:280:10)<br> &nbsp; &nbsp;at Function.handle (/Users/yehiasaid/Desktop/comp426/a05-Ysaid1/node_modules/express/lib/router/index.js:175:3)<br> &nbsp; &nbsp;at router (/Users/yehiasaid/Desktop/comp426/a05-Ysaid1/node_modules/express/lib/router/index.js:47:12)</pre>
+</body>
+</html>
 ```
 
 #### Response headers
 
 ```
-
+HTTP/1.1 500 Internal Server Error
+X-Powered-By: Express
+Content-Security-Policy: default-src 'none'
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 1403
+Date: Mon, 25 Apr 2022 21:51:11 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
 ```
 
 ### /app/user/login/ (POST)
