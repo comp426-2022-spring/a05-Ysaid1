@@ -3,13 +3,52 @@ div.hidden {
 }
 
 div.active {
-  border: 5px solid red;
+  border: 5px solid rgb(235, 180, 135);
 }
 
 img.bigcoin {
   width: 50px;
 }
 
-img.smallcoin {
-  width: 50px;
+#smallcoin {
+  width: 200px;
+}
+
+/* Displaying multiple coin flip results as column */
+#all_results {
+  display: flex;
+}
+
+#all_results_text {
+  display: flex;
+}
+
+#all_results_text p {
+  margin-left: 75px;
+  margin-right: 84px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Width of all images */
+#userGuessImg,
+#actualGuessImg,
+#guessResultImg {
+  width: 200px;
+}
+
+/* Displaying guess flips as columns not in rows */
+.flex-container {
+  display: flex;
+}
+
+.guess {
+  margin-right: 100px;
+}
+
+#userGuess,
+#actualGuess {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
 }
